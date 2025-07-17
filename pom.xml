@@ -11,5 +11,6 @@
     <modules>
         <module>OrderService</module>
         <module>ProductService</module>
+        <module>InventoryService</module>
     </modules>
 </project>
