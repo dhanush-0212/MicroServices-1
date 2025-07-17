@@ -1,0 +1,6 @@
+{
+  "timestamp": "2025-07-17T13:58:58.755+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/api/inventory/iphone_13"
+}

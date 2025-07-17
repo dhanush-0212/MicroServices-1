@@ -1,0 +1,108 @@
+GET http://localhost:8082/api/inventory/iphone_12
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-17T194308.500.json
+
+###
+
+GET http://localhost:8082/api/inventory/iphone
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-17T194301.200.json
+
+###
+
+GET http://localhost:8082/api/inventory/redmi_7
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-17T194250.200.json
+
+###
+
+GET http://localhost:8082/api/inventory/iphone_12
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-17T193719.500.json
+
+###
+
+GET http://localhost:8082/api/inventory/iphone_2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-17T193713.200.json
+
+###
+
+GET http://localhost:8082/api/inventory/ok_2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-17T193658.200.json
+
+###
+
+GET http://localhost:8082/api/inventory/iphone_12
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-17T193542.500.json
+
+###
+
+GET http://localhost:8082/api/inventory/iphone_13
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-17T193249.500.json
+
+###
+
+GET http://localhost:8082/api/inventory/redmi_7
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-17T193231.200.json
+
+###
+
+GET http://localhost:8082/api/inventory/iphone_12
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-17T193122.500.json
+
+###
+
+GET http://localhost:8082/api/inventory/iphone_12
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-17T193041.500.json
+
+###
+
+GET http://localhost:8082/api/inventory/iphone_13
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-17T192858.500.json
+
+###
+
