@@ -26,7 +26,7 @@ public class OrderService {
 
     private final ModelMapper modelMapper;
     private final OrderRepository orderRepository;
-    private final WebClient webClient;
+    private final WebClient.Builder webClientBuilder;
 
     public void placeOrder(OrderRequest orderRequest) {
         order o = new order();
@@ -39,13 +39,10 @@ public class OrderService {
 
         System.out.println("Fetching inventory for codes: " + codes);
 
-        InventoryResponse[] result = webClient.get()
-                .uri(uriBuilder -> uriBuilder
-                        .scheme("http")
-                        .host("localhost")
-                        .port(8082)
-                        .path("/api/inventory")
-                        .queryParam("code",codes.toArray())
+        InventoryResponse[] result = webClientBuilder.build()
+                .get()
+                .uri("http://inventoryservice/api/inventory",
+                        uriBuilder ->  uriBuilder.queryParam("code",codes.toArray())
                         .build())
                 .retrieve()
                 .bodyToMono(InventoryResponse[].class)
