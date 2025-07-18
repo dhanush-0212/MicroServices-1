@@ -33,16 +33,27 @@ public class OrderService {
         o.setOrderNumber(UUID.randomUUID().toString());
         List<orderLineItems> ordercodes =getOrderLineEntities(orderRequest.getOrderLineitemsDto());
         o.setOrderlineitems(ordercodes);
+
         List<String> codes = o.getOrderlineitems().stream()
                 .map(orderLineItems::getOrdercode).toList();
 
+        System.out.println("Fetching inventory for codes: " + codes);
+
+
 
         InventoryResponse[] result = webClient.get()
-                .uri("http://localhost:8082/api/inventory/",
-                        uriBuilder -> uriBuilder.queryParam("codes",codes).build())
+                .uri(uriBuilder -> uriBuilder
+                        .scheme("http")
+                        .host("localhost")
+                        .port(8082)
+                        .path("/api/inventory")
+                        .queryParam("code",codes.toArray())
+                        .build())
                 .retrieve()
                 .bodyToMono(InventoryResponse[].class)
-                        .block();
+                .block();
+
+
 
         if (result == null) throw new AssertionError();
 
@@ -60,7 +71,7 @@ public class OrderService {
             throw new IllegalArgumentException("orderLineList Cannot be  null or empty");
         }
         return orderLineList.stream()
-                .map(orderLineItemsDto -> modelMapper.map(orderLineList,orderLineItems.class))
+                .map(orderLineItemsDto -> modelMapper.map(orderLineItemsDto,orderLineItems.class))
                 .collect(Collectors.toList());
     }
 

@@ -15,19 +15,19 @@ public class InventoryServiceApplication {
         SpringApplication.run(InventoryServiceApplication.class, args);
     }
 
-    @Bean
-    public CommandLineRunner init(InventoryRepo inventoryRepo) {
-        return (args) -> {
-            Inventory inventory = new Inventory();
-            inventory.setOrdercode("iphone_13");
-            inventory.setQantity(3);
-
-            Inventory inventory2 = new Inventory();
-            inventory2.setOrdercode("iphone_12");
-            inventory2.setQantity(3);
-
-            inventoryRepo.save(inventory);
-            inventoryRepo.save(inventory2);
-        };
-    }
+    //@Bean
+//    public CommandLineRunner init(InventoryRepo inventoryRepo) {
+//        return (args) -> {
+//            Inventory inventory = new Inventory();
+//            inventory.setOrdercode("iphone_13");
+//            inventory.setQuantity(3);
+//
+//            Inventory inventory2 = new Inventory();
+//            inventory2.setOrdercode("iphone_12");
+//            inventory2.setQuantity(3);
+//
+//            inventoryRepo.save(inventory);
+//            inventoryRepo.save(inventory2);
+//        };
+//    }
 }

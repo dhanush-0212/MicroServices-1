@@ -16,7 +16,7 @@ public class InventoryController {
     private final InventoryService inventoryService;
     @GetMapping
     public ResponseEntity<List<InventoryResponse>> isInStock(@RequestParam List<String> code) {
-
+        System.out.println("Received codes: " + code);
         return ResponseEntity.ok(inventoryService.IsInStock(code));
     }
 }

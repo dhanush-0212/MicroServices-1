@@ -1,0 +1,6 @@
+{
+  "timestamp": "2025-07-18T05:19:09.299+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/api/order/place"
+}

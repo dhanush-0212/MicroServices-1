@@ -1,0 +1,6 @@
+{
+  "timestamp": "2025-07-18T05:35:37.667+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/api/order/place"
+}

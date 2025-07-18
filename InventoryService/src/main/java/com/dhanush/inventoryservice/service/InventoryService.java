@@ -19,6 +19,8 @@ public class InventoryService {
 
     @Transactional(readOnly = true)
     public List<InventoryResponse> IsInStock(List<String> code) {
+        System.out.println("Inventory lookup for codes: " + code);
+
         return inventoryRepo.findByOrdercodeIn(code)
                 .stream()
                 .map(inventory ->

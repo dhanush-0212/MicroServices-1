@@ -1,3 +1,120 @@
+POST http://localhost:8081/api/order/place
+Content-Type: application/json
+Content-Length: 115
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "orderLineitemsDto": [
+    {
+      "ordercode": "redmi_7",
+      "quantity": 1,
+      "price":25000
+    }
+  ]
+}
+
+<> 2025-07-18T110537.500.json
+
+###
+
+POST http://localhost:8081/api/order/place
+Content-Type: application/json
+Content-Length: 134
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "orderLineitemsDto": [
+    {
+      "ordercode": "redmi_7",
+      "quantity": 1,
+      "price": {
+        25000
+      }
+    }
+  ]
+}
+
+<> 2025-07-18T104909.400.json
+
+###
+
+POST http://localhost:8081/api/order/place
+Content-Type: application/json
+Content-Length: 118
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "orderLineitemsDto": [
+    {
+      "ordercode": "redmi_7",
+      "price": 1200.00,
+      "quantity": 6
+    }
+  ]
+}
+
+<> 2025-07-17T211205.500.json
+
+###
+
+POST http://localhost:8081/api/order/place
+Content-Type: application/json
+Content-Length: 206
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "orderLineitemsDto": [
+    {
+      "ordercode": "iphone_13",
+      "price":1200.00,
+      "quantity": 8
+    },
+    {
+      "ordercode": "redmi_7",
+      "price": 1200.00,
+      "quantity": 6
+    }
+  ]
+}
+
+<> 2025-07-17T211126.500.json
+
+###
+
+POST http://localhost:8081/api/order/place
+Content-Type: application/json
+Content-Length: 206
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "orderLineitemsDto": [
+    {
+      "ordercode": "iphone_13",
+      "price":1200.00,
+      "quantity": 8
+    },
+    {
+      "ordercode": "redmi_7",
+      "price": 1200.00,
+      "quantity": 6
+    }
+  ]
+}
+
+<> 2025-07-17T210907.500.json
+
+###
+
 GET http://localhost:8082/api/inventory/iphone_12
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
 Accept-Encoding: br, deflate, gzip, x-gzip
