@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bbffe92-66e9-4e14-a16d-ced11b761dfc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryService/src/main/java/com/dhanush/inventoryservice/InventoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/dhanush/inventoryservice/InventoryServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryService/src/main/java/com/dhanush/inventoryservice/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/dhanush/inventoryservice/controller/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryService/src/main/java/com/dhanush/inventoryservice/repository/InventoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/dhanush/inventoryservice/repository/InventoryRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryService/src/main/java/com/dhanush/inventoryservice/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/java/com/dhanush/inventoryservice/service/InventoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/com/dhanush/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/dhanush/orderservice/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +25,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HttpClientEndpointsTabState">
-    <option name="cachedRequestData" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;c51a1dfae85cc57364bfc4207312e5dd08d30080&quot; value=&quot;###&amp;#10;POST http://localhost:8081/api/order/place&amp;#10;Content-Type: application/json&amp;#10;&amp;#10;{&amp;#10;  &amp;quot;orderLineitemsDto&amp;quot;: []&amp;#10;}&quot; /&gt;&#10;  &lt;entry key=&quot;585f7896cd01176f319fb44c1cb44358df4ca90f&quot; value=&quot;###&amp;#10;GET http://localhost:8082/api/inventory/iphone_12&amp;#10;&amp;#10;&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
+    <option name="cachedRequestData" value="&lt;CachedHttpClientTabRequests /&gt;" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -68,7 +63,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Projects/Microservices 2",
+    "last_opened_file_path": "D:/Projects/Microservices 2/DiscoveryService",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -145,6 +140,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4bbffe92-66e9-4e14-a16d-ced11b761dfc" name="Changes" comment="" />
@@ -176,7 +174,8 @@
       <workItem from="1752733543424" duration="258000" />
       <workItem from="1752733819568" duration="1134000" />
       <workItem from="1752760573764" duration="6572000" />
-      <workItem from="1752815054715" duration="3782000" />
+      <workItem from="1752815054715" duration="6001000" />
+      <workItem from="1752824071918" duration="110000" />
     </task>
     <servers />
   </component>
@@ -201,11 +200,6 @@
           <url>file://$PROJECT_DIR$/OrderService/src/main/java/com/dhanush/orderservice/OrderServiceApplication.java</url>
           <line>6</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/OrderService/src/main/java/com/dhanush/orderservice/service/OrderService.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -39,8 +39,6 @@ public class OrderService {
 
         System.out.println("Fetching inventory for codes: " + codes);
 
-
-
         InventoryResponse[] result = webClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .scheme("http")
@@ -52,9 +50,6 @@ public class OrderService {
                 .retrieve()
                 .bodyToMono(InventoryResponse[].class)
                 .block();
-
-
-
         if (result == null) throw new AssertionError();
 
         boolean allMatch = Arrays.stream(result)
