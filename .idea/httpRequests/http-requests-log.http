@@ -1,3 +1,33 @@
+POST http://localhost:8080/api/order/place
+Content-Type: application/json
+Content-Length: 119
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "orderLineitemsDto": [
+    {
+      "ordercode": "redmi_7",
+      "price": 12000.00,
+      "quantity": 1
+    }
+  ]
+}
+
+<> 2025-07-19T225523.404.json
+
+###
+
+GET http://localhost:8080/api/product/getAll
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-19T212636.404.json
+
+###
+
 POST http://localhost:8081/api/order/place
 Content-Type: application/json
 Content-Length: 115

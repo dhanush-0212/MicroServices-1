@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-07-19T17:25:23.969+00:00",
+  "path": "/api/order/place",
+  "status": 404,
+  "error": "Not Found",
+  "requestId": "a8ec09d0-4"
+}

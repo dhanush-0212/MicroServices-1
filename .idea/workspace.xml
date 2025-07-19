@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bbffe92-66e9-4e14-a16d-ced11b761dfc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/com/dhanush/orderservice/configuration/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/dhanush/orderservice/configuration/WebClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/com/dhanush/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/dhanush/orderservice/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HttpClientEndpointsTabState">
-    <option name="cachedRequestData" value="&lt;CachedHttpClientTabRequests /&gt;" />
+    <option name="cachedRequestData" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;13549c69b96b32b67e840be0c3b775f01c131e50&quot; value=&quot;###&amp;#10;GET http://localhost:8084/api/product/getAll&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -52,12 +55,15 @@
     "HTTP Request.Microservices_2-endpoints | -.executor": "Run",
     "HTTP Request.Microservices_2-endpoints_1 | #1.executor": "Run",
     "HTTP Request.Microservices_2-endpoints_2 | #1.executor": "Run",
+    "HTTP Request.Microservices_2-endpoints_3 | #1.executor": "Run",
+    "HTTP Request.Microservices_2-endpoints_4 | #1.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.DiscoveryServiceApplication.executor": "Run",
     "Spring Boot.InventoryServiceApplication-2.executor": "Run",
     "Spring Boot.InventoryServiceApplication.executor": "Run",
@@ -67,7 +73,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Projects/Microservices 2/DiscoveryService/pom.xml",
+    "last_opened_file_path": "D:/Projects/Microservices 2/APIGateway/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -99,7 +105,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.InventoryServiceApplication-2">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
     <configuration name="Microservices_2-endpoints | -" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/Microservices_2-endpoints.http" executionIdentifier="-" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -108,6 +114,19 @@
     </configuration>
     <configuration name="Microservices_2-endpoints_2 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/Microservices_2-endpoints_2.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="Microservices_2-endpoints_3 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/Microservices_2-endpoints_3.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Microservices_2-endpoints_4 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/Microservices_2-endpoints_4.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="APIGateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dhanush.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="DiscoveryService" />
@@ -154,9 +173,12 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.Microservices_2-endpoints_3 | #1" />
+      <item itemvalue="HTTP Request.Microservices_2-endpoints_4 | #1" />
       <item itemvalue="HTTP Request.Microservices_2-endpoints | #1" />
       <item itemvalue="HTTP Request.Microservices_2-endpoints | -" />
       <item itemvalue="HTTP Request.Microservices_2-endpoints_2 | #1" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
       <item itemvalue="Spring Boot.InventoryServiceApplication" />
       <item itemvalue="Spring Boot.InventoryServiceApplication-2" />
@@ -166,6 +188,8 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.Microservices_2-endpoints_4 | #1" />
+        <item itemvalue="HTTP Request.Microservices_2-endpoints_3 | #1" />
         <item itemvalue="HTTP Request.Microservices_2-endpoints_2 | #1" />
         <item itemvalue="HTTP Request.Microservices_2-endpoints | -" />
         <item itemvalue="HTTP Request.Microservices_2-endpoints | #1" />
@@ -218,7 +242,9 @@
       <workItem from="1752815054715" duration="6001000" />
       <workItem from="1752824071918" duration="110000" />
       <workItem from="1752824186115" duration="4156000" />
-      <workItem from="1752847594979" duration="3164000" />
+      <workItem from="1752847594979" duration="3975000" />
+      <workItem from="1752937436879" duration="503000" />
+      <workItem from="1752938011736" duration="7348000" />
     </task>
     <servers />
   </component>

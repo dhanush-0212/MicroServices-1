@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: APIGateway
+
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+          routes:
+            - id: productservice
+              uri: lb://PRODUCTSERVICE
+              predicates:
+                        - Path=/api/product/**
+
+            - id: orderservice
+              uri: lb://ORDERSERVICE
+              predicates:
+                        - Path=/api/order/**
+
+#        - id: inventoryservice
+#          uri: lb://INVENTORYSERVICE
+#          predicates:
+#            - Path=/api/inventory/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.gateway.route.RouteDefinitionLocator: INFO
+    org.springframework.cloud.gateway: TRACE
