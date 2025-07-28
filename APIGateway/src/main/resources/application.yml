@@ -20,6 +20,11 @@ spring:
               uri: lb://ORDERSERVICE
               predicates:
                       - Path=/api/order/**
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8180/realms/microservices2
 
 #        - id: inventoryservice
 #          uri: lb://INVENTORYSERVICE
@@ -36,3 +41,4 @@ logging:
     root: INFO
     org.springframework.cloud.gateway.route.RouteDefinitionLocator: INFO
     org.springframework.cloud.gateway: TRACE
+
