@@ -20,6 +20,8 @@ spring:
               uri: lb://ORDERSERVICE
               predicates:
                       - Path=/api/order/**
+
+
   security:
     oauth2:
       resourceserver:
