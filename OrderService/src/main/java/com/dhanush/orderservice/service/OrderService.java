@@ -2,12 +2,14 @@ package com.dhanush.orderservice.service;
 
 import com.dhanush.orderservice.dto.InventoryResponse;
 import com.dhanush.orderservice.dto.OrderLineItemsDto;
+import com.dhanush.orderservice.dto.OrderPlacedEvent;
 import com.dhanush.orderservice.dto.OrderRequest;
 import com.dhanush.orderservice.model.order;
 import com.dhanush.orderservice.model.orderLineItems;
 import com.dhanush.orderservice.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -24,7 +26,7 @@ public class OrderService {
     private final ModelMapper modelMapper;
     private final OrderRepository orderRepository;
     private final WebClient.Builder webClientBuilder;
-
+    private final KafkaTemplate<String, OrderPlacedEvent> kafkaTemplate;
     public void placeOrder(com.dhanush.orderservice.dto.OrderRequest orderRequest) {
 
         List<OrderLineItemsDto> itemDtos = orderRequest.getOrderLineitemsDto();
@@ -77,6 +79,7 @@ public class OrderService {
 
         if (allRequestedCodesReturned && allInStock) {
             orderRepository.save(o);
+            kafkaTemplate.send("notificationTopic",new OrderPlacedEvent(o.getOrderNumber()));
             System.out.println("✅ Order placed successfully: " + o.getOrderNumber());
         } else {
             System.err.println("❌ Order failed: Out of stock or invalid codes");
