@@ -1,6 +1,6 @@
-package com.dhanush.orderservice.dto;
+package com.dhanush.notifiactionservice;
 
-import jakarta.persistence.Entity;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
