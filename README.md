@@ -3,14 +3,29 @@
 
 
 This repository contains a basic-featured e-commerce application built using a microservices architecture. It demonstrates key patterns and technologies for building robust, scalable, and maintainable distributed systems. The system includes services for managing products, inventory, and orders, along with asynchronous notifications, service discovery, a centralized API gateway, and distributed tracing.
-It is mainly developed to understand microservices ,so basic api endpoints are only added..
+
+**It is mainly developed to understand microservices,so basic api endpoints are only added..**
+
+## ✨ Features
+
+* Modular, scalable microservice setup
+
+* Kafka-based asynchronous messaging
+
+* Distributed tracing with Zipkin
+
+* JWT/OAuth2 secured endpoints
+
+* Circuit breaker with Resilience4j
 
 ## Architecture Overview
 
 The application is composed of several independent services that communicate with each other over the network. This design promotes separation of concerns, independent deployment, and scalability.
 
 *   **API Gateway**: The single entry point for all client requests. It routes traffic to the appropriate downstream service, handles authentication via OAuth2/JWT, and facilitates distributed tracing.
+   
 *   **Discovery Service (Eureka)**: A service registry where all other microservices register themselves. This allows services to dynamically discover and communicate with each other without hardcoded URLs.
+  
 *   **Product Service**: Manages the product catalog. It provides REST endpoints for creating and listing products, using **MongoDB** for data persistence.
 *   **Inventory Service**: Tracks the stock levels for each product. It communicates with the Order Service to verify stock availability and uses a **MySQL** database.
 *   **Order Service**: Handles the core business logic of placing orders. It performs a synchronous call to the Inventory Service to check stock and, upon successful validation, saves the order to its **MySQL** database. It then publishes an `OrderPlacedEvent` to a Kafka topic for asynchronous processing. It also includes a **Resilience4j Circuit Breaker** to handle failures when communicating with the Inventory Service.
@@ -20,7 +35,7 @@ The application is composed of several independent services that communicate wit
 
 
 
-## Technology Stack
+## Tech Stack
 
 | Component                | Technology                                                                                                  |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------- |
@@ -42,6 +57,7 @@ The application is composed of several independent services that communicate wit
 *   Docker & Docker Compose
 *   Maven
 *   An IDE like IntelliJ IDEA or VS Code
+*   Keycloak
 
 ## Getting Started
 
@@ -92,6 +108,7 @@ CREATE DATABASE InventoryService;
 
 ### 4. Security Setup (Keycloak)
 The API Gateway is configured to use Keycloak for authentication.
+
 - **Issuer URI**: `http://localhost:8180/realms/microservices2`
 You will need to run a Keycloak instance, create a realm named `microservices2`, and configure a public client to issue JWTs.
 
@@ -191,3 +208,10 @@ All requests should be sent through the API Gateway, which runs on port `8080`.
 *   **Check Stock**
     *   `GET /api/inventory?code=iphone_15`
     *   This endpoint is intended for internal use by the Order Service but can be called directly for testing.
+ 
+### 6.🧩 Troubleshooting
+Service not registering? Check Eureka logs and port conflicts.
+
+Auth issues? Ensure Keycloak is correctly configured and running.
+
+Kafka not publishing? Restart Zookeeper and Kafka containers.
