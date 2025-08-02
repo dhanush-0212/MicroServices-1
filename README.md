@@ -2,7 +2,8 @@
 
 
 
-This repository contains a full-featured e-commerce application built using a microservices architecture. It demonstrates key patterns and technologies for building robust, scalable, and maintainable distributed systems. The system includes services for managing products, inventory, and orders, along with asynchronous notifications, service discovery, a centralized API gateway, and distributed tracing.
+This repository contains a basic-featured e-commerce application built using a microservices architecture. It demonstrates key patterns and technologies for building robust, scalable, and maintainable distributed systems. The system includes services for managing products, inventory, and orders, along with asynchronous notifications, service discovery, a centralized API gateway, and distributed tracing.
+It is mainly developed to understand microservices ,so basic api endpoints are only added..
 
 ## Architecture Overview
 
