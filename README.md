@@ -18,6 +18,8 @@ This repository contains a basic-featured e-commerce application built using a m
 
 * Circuit breaker with Resilience4j
 
+<img width="1108" height="691" alt="diagram-export-8-26-2025-10_43_19-PM" src="https://github.com/user-attachments/assets/c975587d-ff54-42a8-8cd1-f6e512ef2d42" />
+
 ## Architecture Overview
 
 The application is composed of several independent services that communicate with each other over the network. This design promotes separation of concerns, independent deployment, and scalability.
